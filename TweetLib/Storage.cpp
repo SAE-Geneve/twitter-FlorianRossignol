@@ -8,7 +8,7 @@ namespace tweet {
 	{
 		std::scoped_lock l(mutex_);
 		// Check if you are already login.
-		auto it = context_names_.find(context);
+ 		auto it = context_names_.find(context);
 		if (it == context_names_.end())
 		{
 			return false;
